@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* SpryCollapsiblePanel.css - version 0.5 - Spry Pre-Release 1.6.1 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/* This is the selector for the main CollapsiblePanel container. For our
+ * default style, the CollapsiblePanel is responsible for drawing the borders
+ * around the widget.
+ *
+ * If you want to constrain the width of the CollapsiblePanel widget, set a width on
+ * the CollapsiblePanel container. By default, our CollapsiblePanel expands horizontally to fill
+ * up available space.
+ *
+ * The name of the class ("CollapsiblePanel") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style the
+ * CollapsiblePanel container.
+ */
+.CollapsiblePanel {
+	margin: 0px;
+	padding: 0px;
+	border:none; outline:none;	
+}
+
+/* This is the selector for the CollapsiblePanelTab. This container houses
+ * the title for the panel. This is also the container that the user clicks
+ * on to open or close the panel.
+ *
+ * The name of the class ("CollapsiblePanelTab") used in this selector is not necessary
+ * to make the widget function. You can use any class name you want to style an
+ * CollapsiblePanel panel tab container.
+ */
+.CollapsiblePanelTab {
+	font: bold 12px Arial;
+	margin: 0px;
+	color:#fff;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	height:30px; line-height:30px;
+	border:none; outline:none;
+}
+
