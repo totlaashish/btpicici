@@ -1,0 +1,538 @@
+.nav-gb {
+    width: 100%;
+	/*background-image:url(../../static/images/menu-bg.jpg); background-repeat:repeat-x;*/
+	background-color:#041F37;
+}
+.nav-gb .container {
+    background-color: #041f37;
+    height: 45px;
+}
+
+.toggleMenu {
+		display:  none;
+		/*background-image:url(../../static/images/menu-bg.jpg); background-repeat:repeat-x;*/
+		/*background-color:#041F37;*/
+		padding: 10px;
+		color: #fff;
+		/*width:100%;*/
+		font-size:22px;
+		font-family:Arial;
+		font-weight:bold;
+}
+.nav {
+    list-style: none;
+     *zoom: 1;
+}
+.nav:before,
+.nav:after {
+    content: " "; 
+    display: table; 
+}
+.nav:after {
+    clear: both;
+}
+.nav ul {
+    list-style: none;
+	width:100%;
+}
+.nav a {
+    padding: 6px 15px;
+    color:#fff;
+	font-family:Arial;
+	font-size:13px;
+}
+.nav li {
+    position: relative;
+}
+.nav > li {
+    float: left;
+}
+.nav > li > .parent {
+    background-image: url("../images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav > li > a {
+    display: block;
+	
+}
+.nav > li > a:hover {
+    display: block;
+	/*background-color:#3399ff;*/
+	text-decoration:none;
+}
+.nav li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.nav li li a {
+    display: block;
+	background-color:#041F37;
+    position: relative;
+    z-index:100;
+    border-bottom:1px solid #3A3F40;
+	border-top:none;
+	width:250px;
+	padding:2px 5px;	
+	color:#fff;
+	
+	/*width:100%;*/
+}
+.nav > li li > .parent {
+    background-image: url("../images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+.nav li li li a {
+    z-index:200;
+	margin-left:110px;
+	background:#041F37;
+	padding:2px 0 2px 20px;
+	color:#000;
+}
+
+
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+	.nav-gb {
+    width: 100%;
+	background-image:none;
+	/*margin-bottom:15px;*/
+	
+}
+.toggleMenu {
+    display:  none;
+    /*background-image:url(../../static/images/menu-bg.jpg); background-repeat:repeat-x;*/
+	background-color:#041F37;
+    padding: 10px 10px;
+    color: #fff;
+	width:98.5%;
+	font-size:22px;
+	font-family:Arial;
+	font-weight:bold;
+}
+.container {
+    width: 100%;
+	/*height:31px;*/
+}
+    .active {
+        display: block;
+    }
+	.nav {
+		margin-top:0px;
+    list-style: none;
+     *zoom: 1;
+     background:#041F37;
+}
+    .nav > li {
+		margin-left:-40px;
+        float: none;
+		border-bottom:1px solid #3A3F40;
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+		 background-image: url("../images/downArrow.png");
+    }
+	.nav li {
+    position: relative;
+	z-index:999;
+}
+	.nav > li > a{
+		display: block;
+	background-color:#041F37 ;
+	}
+	.nav > li > a:hover {
+    display: block;
+	background-color:#041F37 ;
+}
+	
+	.nav li li a {
+    display: block;
+    background: #041F37;
+    position: relative;
+    z-index:100;
+	border-bottom:1px solid #3A3F40;
+	border-top:none;	
+	width:96%;
+	padding:4px 0 4px 30px;
+	text-decoration:none;
+}
+    .nav li li .parent {
+        background-image: url("../images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+	.nav li li li a {
+    background:#041F37;
+	padding:2px 0 2px 20px;
+    z-index:200;
+	margin:0px;
+	width:97.1%;
+	color:#000;
+}
+    .nav ul {
+		margin-left:-40px;
+        display: block;
+        width: 100%;
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+}
+
+
+
+@media only screen and (min-width : 640px) and (max-width : 767px) {
+.toggleMenu {
+    display:  none;
+    /*background-image:url(../../static/images/menu-bg.jpg); background-repeat:repeat-x;*/
+	background-color:#041F37;
+    padding: 10px 10px;
+    color: #fff;
+	width:96.8%;
+	font-size:22px;
+	font-family:Arial;
+	font-weight:bold;
+}
+	.nav-gb {
+    width: 100%;
+	background-image:none;
+	/*margin-bottom:15px;*/
+}
+.container {
+    width: 100%;
+	/*height:31px;*/
+}
+    .active {
+        display: block;
+    }
+	.nav {
+		margin-top:0px;
+    list-style: none;
+     *zoom: 1;
+     background:#041F37;
+}
+    .nav > li {
+		margin-left:-40px;
+        float: none;
+		border-bottom:1px solid #3A3F40;
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+		 background-image: url("../images/downArrow.png");
+    }
+	.nav li {
+    position: relative;
+	z-index:999;
+}
+	.nav > li > a{
+		display: block;
+	background-color:#041f37;
+	}
+	
+	
+	.nav li li a {
+    display: block;
+    background: #041F37;
+    position: relative;
+    z-index:100;
+	border-bottom:1px solid #3A3F40;
+	border-top:none;	
+	width:96%;
+	padding:4px 0 4px 30px;
+	text-decoration:none;
+}
+    .nav li li .parent {
+        background-image: url("../images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+	.nav li li li a {
+    background:#041F37;
+	padding:2px 0 2px 20px;
+    z-index:200;
+	margin:0px;
+	width:95.5%;
+	color:#000;
+	font-size:13px;
+}
+    .nav ul {
+		margin-left:-40px;
+        display: block;
+        width: 100%;
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+}
+
+@media only screen and (min-width : 480px) and (max-width : 639px) {
+	.toggleMenu {
+    display:  none;
+    /*background-image:url(../../static/images/menu-bg.jpg); background-repeat:repeat-x;*/
+	background-color:#041F37;
+    padding: 10px 10px;
+    color: #fff;
+	width:95.9%;
+	font-size:22px;
+	font-family:Arial;
+	font-weight:bold;
+}
+	.nav-gb {
+    width: 100%;
+	background-image:none;
+	/*margin-bottom:15px;*/
+}
+.container {
+    width: 100%;
+	/*height:31px;*/qs
+}
+    .active {
+        display: block;
+    }
+	.nav {
+		margin-top:0px;
+    list-style: none;
+     *zoom: 1;
+     background:#041F37;
+}
+    .nav > li {
+		margin-left:-40px;
+        float: none;
+		border-bottom:1px solid #3A3F40;
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+		 background-image: url("../images/downArrow.png");
+    }
+	.nav li {
+    position: relative;
+	z-index:999;
+}
+	.nav > li > a{
+		display: block;
+	background-color:#041f37;
+	}
+	
+	
+	.nav li li a {
+    display: block;
+    background: #041F37;
+    position: relative;
+    z-index:100;
+	border-bottom:1px solid #3A3F40;
+	border-top:none;	
+	width:96%;
+	padding:4px 0 4px 30px;
+	text-decoration:none;
+}
+    .nav li li .parent {
+        background-image: url("../images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+	.nav li li li a {
+    background:#041F37;
+	padding:2px 0 2px 20px;
+    z-index:200;
+	margin:0px;
+	width:95.5%;
+	color:#000;
+	font-size:13px;
+}
+    .nav ul {
+		margin-left:-40px;
+        display: block;
+        width: 100%;
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+}
+
+
+
+
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 479px) {
+	.toggleMenu {
+    display:  none;
+    /*background-image:url(../../static/images/menu-bg.jpg); background-repeat:repeat-x;*/
+	background-color:#041F37;
+    padding: 10px 10px;
+    color: #fff;
+	width:94.1%;
+	font-size:22px;
+	font-family:Arial;
+	font-weight:bold;
+}
+	.nav-gb {
+    width: 100%;
+	background-image:none;
+	/*margin-bottom:15px;*/
+}
+.container {
+    width: 100%;
+	/*height:31px;*/
+}
+    .active {
+        display: block;
+    }
+	.nav {
+		margin-top:0px;
+    list-style: none;
+     *zoom: 1;
+     background:#041F37;
+}
+    .nav > li {
+		margin-left:-40px;
+        float: none;
+		border-bottom:1px solid #3A3F40;
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+		 background-image: url("../images/downArrow.png");
+    }
+	.nav li {
+    position: relative;
+	z-index:999;
+}
+	.nav > li > a{
+		display: block;
+	background-color:#041f37;
+	}
+	
+	
+	.nav li li a {
+    display: block;
+    background: #041F37;
+    position: relative;
+    z-index:100;
+	border-bottom:1px solid #3A3F40;
+	border-top:none;	
+	width:96%;
+	padding:4px 0 4px 30px;
+	text-decoration:none;
+}
+    .nav li li .parent {
+        background-image: url("../images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+	.nav li li li a {
+    background:#041F37;
+	padding:2px 0 2px 20px;
+    z-index:200;
+	margin:0px;
+	width:93.3%;
+	color:#000;
+}
+    .nav ul {
+		margin-left:-40px;
+        display: block;
+        width: 100%;
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+}
+
+
+
+@media only screen
+and (min-width : 240px)
+and (max-width : 319px) {
+	.toggleMenu {
+		display:  none;
+		/*background-image:url(../../static/images/menu-bg.jpg); background-repeat:repeat-x;*/
+		/*background-color:#041F37;*/
+		padding: 10px 10px;
+		color: #000;
+		width:90%;
+		font-size:22px;
+		font-family: Arial;
+		font-weight:bold;
+}
+	
+	.nav-gb {
+		width: 100%;
+		background-image:none;
+	/*margin-bottom:15px;*/
+}
+.container {
+    width: 100%;
+	height:31px;
+	}
+    .active {
+        display: block;
+    }
+	.nav {
+		margin-top:-1px;
+    list-style: none;
+     *zoom: 1;
+     background:#041F37;
+}
+    .nav > li {
+		margin-left:-40px;
+        float: none;
+		border-bottom:1px solid #3A3F40;
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+		 background-image: url("../images/downArrow.png");
+    }
+	.nav li {
+    position: relative;
+	z-index:999;
+}
+	.nav > li > a{
+		display: block;
+	background-color:#041f37;
+	}
+	
+	
+	.nav li li a {
+    display: block;
+    background: #041F37;
+    position: relative;
+    z-index:100;
+	border-bottom:1px solid #3A3F40;
+	border-top:none;	
+	width:96%;
+	padding:4px 0 4px 30px;
+	text-decoration:none;
+} .nav li li .parent {
+        background-image: url("../images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+	.nav li li li a {
+    background:#041F37;
+	padding:2px 0 2px 20px;
+    z-index:200;
+	margin:0px;
+	width:90.5%;
+	color:#000;
+}
+    .nav ul {
+		margin-left:-40px;
+        display: block;
+        width: 100%;
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+}

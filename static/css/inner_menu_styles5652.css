@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* Base Styles */
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+#cssmenu {
+  width: 100%;
+}
+#cssmenu a {
+  line-height: 1.3;
+}
+#cssmenu > ul > li:first-child {
+  background-color:#01559D ;
+}
+#cssmenu > ul > li:first-child > a {
+  padding: 21px 10px;
+  border: none;
+  border-top: 1px solid #818176;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 300;
+  text-shadow: 0 -1px 1px #000000;
+}
+#cssmenu > ul > li:first-child > a > span {
+  padding: 0;
+}
+#cssmenu > ul > li:first-child:hover {
+  background-color:#01559D ;
+}
+#cssmenu > ul > li {
+  background-color:#01559D ;
+}
+#cssmenu > ul > li:hover {
+  background-color:#01559D ;
+}
+#cssmenu > ul > li > a {
+  font-size: 14px;
+  display: block;
+  /*background: url(images/pattern.png) top left repeat;*/
+  color: #ffffff;
+  border: 1px solid #ba2f14;
+  border-top: none;
+  text-shadow: 0 -1px 1px #751d0c;
+}
+#cssmenu > ul > li > a > span {
+  display: block;
+  padding: 12px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#cssmenu > ul > li > a:hover {
+  text-decoration: none;
+}
+#cssmenu > ul > li.active {
+  border-bottom: none;
+}
+#cssmenu > ul > li.has-sub > a span {
+  background: url(images/icon_plus.html) 96% center no-repeat;
+}
+#cssmenu > ul > li.has-sub.active > a span {
+  background: url(images/icon_minus.html) 96% center no-repeat;
+}
+/* Sub menu */
+#cssmenu ul ul {
+  display: none;
+}
+#cssmenu ul ul li {
+}
+#cssmenu ul ul li:last-child {
+  border-bottom: none;
+}
+#cssmenu ul ul a {
+  display: block;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 24px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -7px;
+}
+#nav-toggle span:after {
+  bottom: -7px; 
+}
+#tag-remove:before {
+	content: 'x'; // here is your X(cross) sign.
+	color: #fff;
+	font-weight: 300;
+	font-family: Arial, sans-serif;
+}
